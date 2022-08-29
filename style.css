@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.view {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 56, 56);
+}
+
+.container {
+  border-radius: 20px;
+  width: max(50%, 400px);
+  min-height: 60%;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  box-shadow: 2px 5px 10px black;
+  position: relative;
+}
+
+.score {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score-head {
+  padding: 5px;
+}
+
+.difficulty {
+  display: flex;
+}
+
+.difficulty h4 {
+  padding-inline: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.question {
+  padding: 20px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#answer {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 50px 20px;
+  display: block;
+  width: calc(100% - 80px);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+input::placeholder {
+  color: lightgrey;
+  font-family: "Montserrat", sans-serif;
+}
+
+.txt,
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px;
+  padding-inline: 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  padding: 5px 0;
+  width: 200px;
+  margin: auto auto;
+  border-radius: 10px;
+}
+
+.reset {
+  margin-inline: 10px;
+}
+
+.start {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+}
+
+.unactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.stop {
+  background-color: red;
+  color: white;
+  margin-top: 10px;
+}
+
+.start-stop {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="./app.js" defer></script>
+  <title>Maths Quiz</title>
+</head>
+
+<body>
+  <div class="view">
+    <div class="container">
+      <div class="score">
+        <h4 class="score-head">Score: <span id="score-digit">0</span></h4>
+        <div class="difficulty">
+          <h4 class="easy active">Easy</h4>
+          <h4 class="medium">Medium</h4>
+          <h4 class="hard">Hard</h4>
+        </div>
+      </div>
+
+      <div class="countdown">Time: <span class="timer"></span></div>
+      <h1 class="question">
+        What is <span class="num1">1</span> <span class="operator">X </span><span class="num2">5</span> ?
+      </h1>
+
+      <h2 class="popup"></h2>
+
+      <div class="txt">
+        <input class="unactive" type="number" name="answer" id="answer" placeholder="Enter your Answer"
+          autocomplete="off" />
+
+      </div>
+      <div class="submit">
+        <button type="submit" class="btn unactive">Submit</button>
+        <button type="submit" class="btn reset">Reset</button>
+      </div>
+      <div class="submit start-stop">
+        <button type="submit" class="btn start">Start</button>
+        <button type="submit" class="btn stop">Stop</button>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
